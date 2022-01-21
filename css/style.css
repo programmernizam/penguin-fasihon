@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2{
+    font-family: 'Bebas Neue', cursive;
+}
+:root{
+    --color-highlight:#FABE4C;
+    --color: rgb(54, 57, 88);
+    --bg-color: linear-gradient(#a4bc46, #85a019);
+}
+/* =====|>Reusable Styles<|===== */
+.primary-btn{
+    font-size: 16px;
+    color: #fff;
+    background: var(--bg-color);
+}
+.primary-btn:hover{
+    color: #fff;
+    background: linear-gradient(#85a019, #a4bc46 );
+}
+/* =====|>Header<|===== */
+header{
+    background: #FFFBF0;
+    padding-bottom: 100px;
+}
+/* Navbar */
+.navbar .navbar-brand img{
+    width: 290px;
+}
+.navbar-nav .nav-item{
+    margin-left: 30px;
+}
+.navbar-nav .nav-item .nav-link{
+    color: var(--color);
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #a4bc46;
+}
+.navbar-nav .nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #a4bc46;
+    left: 0;
+    bottom: 0;
+    transition: 1s;
+}
+.navbar-nav .nav-item .nav-link:hover::after{
+    width: 100%;
+}
+/* =====|>Products<|===== */
+.card-image{
+    background: #F1F1F1;
+    border-radius: 20px;
+}
+.card-price{
+    color: var(--color-highlight);
+}
+/* =====|>Service<|===== */
+.service-card{
+    border-radius: 20px;
+}
